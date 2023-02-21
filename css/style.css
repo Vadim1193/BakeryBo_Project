@@ -1,0 +1,842 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+/* font-family: 'Kaushan Script', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+/* font-family: 'Nunito', sans-serif; */
+@font-face {
+    font-family: 'nunitoextralight';
+    src:url('../fonts/nunito-extralight/nunito-extralight-webfont.eot');
+    src:url('../fonts/nunito-extralight/nunito-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/nunito-extralight/nunito-extralight-webfont.woff2') format('woff2'),
+        url('../fonts/nunito-extralight/nunito-extralight-webfont.woff') format('woff'),
+        url('../fonts/nunito-extralight/nunito-extralight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'nunitosemibold';
+    src:url('../fonts/nunito-semibold/nunito-semibold-webfont.eot');
+    src:url('../fonts/nunito-semibold/nunito-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/nunito-semibold/nunito-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/nunito-semibold/nunito-semibold-webfont.woff') format('woff'),
+        url('../fonts/nunito-semibold/nunito-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+@font-face {
+    font-family: 'open_sanssemibold';
+    src:url('../fonts/opensans-semibold/opensans-semibold-webfont.eot');
+    src:url('../fonts/opensans-semibold/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/opensans-semibold/opensans-semibold-webfont.woff2') format('woff2'),
+        url('../fonts/opensans-semibold/opensans-semibold-webfont.woff') format('woff'),
+        url('../fonts/opensans-semibold/opensans-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*  */
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    color: #0f1417;
+    position: relative;
+    width: 1610px;
+    margin: 0 auto;
+    font-family: 'Nunito', sans-serif;
+    z-index: 10;
+}
+header {
+    width: 1120px;
+    margin: 0 auto 110px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    margin: 65px 0 0 0;
+    color: #ffffff;
+    font-family: 'Kaushan Script', cursive;
+    font-size: 36px;
+    text-decoration: none;
+    letter-spacing: 0.9px;  
+}
+.nav_list {
+    font-family: 'nunitosemibold';
+}
+.list {
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+    margin: 78px 0 0 0;
+}
+.list li.active a{
+    border-bottom: 2px solid #fdfcfc;
+}
+.nav_link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 0 0 10px 0;
+    letter-spacing: 0.45px;
+}
+.list li a:hover {
+    border-bottom: 2px solid #fdfcfc;
+}
+.main_block_top {
+    margin: 0 auto 37px;
+    color: #ffffff;
+    font-family: 'nunitosemibold';
+    line-height: 60px;
+}
+h1 {
+    font-size: 48px;
+    letter-spacing: 1.2px;
+}
+.main_block_top p {
+    font-size: 40px;
+}
+.main_block_top_text {
+    margin: 0 0 40px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 36px;
+}
+.main_block_top_text li {
+    letter-spacing: 0.30px;
+}
+.main_block {
+    text-align: center;
+}
+.main_block_top_buttons {
+    font-size: 0;
+    margin: 0 0 100px 0;
+}
+.main_block_top_buttons_link li.active a{
+    background: #ffffff;   
+    color: #010000;
+}
+.main_block_top_buttons_link li{
+    display: inline-block; 
+    border: 2px solid #ffffff;
+}
+.main_block_top_buttons a{
+    display: inline-block;
+    padding: 12px 35px 11px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+}
+.main_block_top_buttons a:hover {
+    background: #ffffff;   
+    color: #010000;
+}
+.main_block_top_buttons_link li:first-child {
+    margin: 0 30px 0 0 ;
+}
+.next {
+    font-size: 0;
+    position: relative;
+    z-index: 5;
+}
+.block_first_wh_arrow {
+    display: inline-block;
+    margin: 0 0 28px 0;
+}
+.bl_arrow {
+    display: inline-block;
+    margin: 0 0 44px 0;
+}
+.next a:hover {
+    transform: scale(1.2);
+}
+.background_top img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.block_first {
+    position: relative;
+}
+.background_top::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000000;
+    opacity: 0.5;
+    z-index: 5;
+}
+.text_second_block {
+    text-align: center;
+    font-size: 14px;
+    margin: 0 0 44px 0;
+}
+.text_second_block h2 {
+    padding: 43px 0 24px 0;
+}
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.8px;
+}
+.text_second_block p {
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.35px;
+}
+.second_block {
+    text-align: center;
+    position: relative;
+}
+.picture_baget {
+    height: 340px;
+    position: relative;
+} 
+.dignity_bread {
+    display: flex;
+    color: #0f1417;
+    font-size: 12px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 36px;
+    letter-spacing: 0.3px;
+}
+.background_second_block img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.dignity_bread>div {
+    position: absolute;
+    display: flex;
+    margin: 15px;
+}
+.vector_one {
+    transform: translateX(282px) translateY(-340px);
+}
+.vector_one span {
+    transform: translateX(-7px) translateY(-10px);
+} 
+.vector_two {
+    transform: translateX(256px) translateY(-286px);
+}
+.vector_two span {
+    transform: translateX(-7px) translateY(-10px);
+}
+.vector_three {
+    transform: translateX(272px) translateY(-225px);
+}
+.vector_three span {
+    transform: translateX(-7px) translateY(-2px);
+}
+.vector_four {
+    transform: translateX(273px) translateY(-183px);
+}
+.vector_four span {
+    transform: translateX(-7px) translateY(14px);
+}
+.vector_five {
+    transform: translateX(1097px) translateY(-367px);
+}
+.vector_five span {
+    transform: translateX(13px) translateY(-8px);
+}
+.vector_six {
+    transform: translateX(1132px) translateY(-304px);
+}
+.vector_six span {
+    transform: translateX(12px) translateY(-8px);
+}
+.vector_seven {
+    transform: translateX(1147px) translateY(-248px);
+}
+.vector_seven span {
+    transform: translateX(9px) translateY(-1px);
+}
+.vector_eight {
+    transform: translateX(1145px) translateY(-207px);
+}
+.vector_eight span {
+    transform: translateX(9px) translateY(16px);
+}
+.third_block {
+    background: #ffffff;
+}
+.products_price h2 {
+    padding: 60px 0 40px 0;
+}
+.wrapper_products {
+    padding: 19px 24px 38px 24px;
+    box-shadow: 0 6px 9px rgba(2, 6, 18, 0.04);
+    background: #ffffff;
+    cursor: pointer;
+}
+.wrapper_products:hover {
+    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.2);
+}
+.product_types {
+    display: flex;
+    column-gap: 30px;
+    justify-content: center;
+    position: relative;
+    transform: translateX(15px);
+    margin-bottom: 42px;
+}
+.products p {
+    line-height: 18px;
+    font-weight: 700;
+}
+.level_one {
+    width: 112px;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    padding-bottom: 12px;
+}
+.level_two {
+    padding-bottom: 12px;
+    font-size: 10px;
+    letter-spacing: 0.25px;
+}
+.level_three {
+    font-size: 16px;
+    letter-spacing: 0.4px;
+}
+.photo_bread_one {
+    position: relative;
+}
+.photo_bread_two {
+    position: relative;
+}
+.photo_bread_three {
+    position: relative;    
+}
+.photo_bread_four {
+    position: relative;    
+} 
+.products {
+    padding-top: 120px;
+}
+.photo_bread_one::before {
+    content: "";
+    position: absolute;
+    width: 110px; 
+    height: 110px;
+    background: url(../img/sprite/css_sprites_prise.png) -10px -10px;
+    top: 0;
+    left: 1px;
+}
+.photo_bread_two::before {
+    content: "";
+    position: absolute;
+    width: 110px; 
+    height: 110px;
+    background: url(../img/sprite/css_sprites_prise.png) -140px -10px;
+    top: 0;
+    left: 1px;
+}
+.photo_bread_three::before {
+    content: "";
+    position: absolute;
+    width: 110px; 
+    height: 110px;
+    background: url(../img/sprite/css_sprites_prise.png) -10px -140px;
+    top: 0;
+    left: 1px;
+}
+.photo_bread_four::before {
+    content: "";
+    position: absolute;
+    width: 110px; 
+    height: 110px;
+    background: url(../img/sprite/css_sprites_prise.png) -140px -140px;
+    top: 0;
+    left: 1px;
+}
+.arrow_product_types_left {
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    margin-top: -13px;
+}
+.arrow_product_types_right {
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    margin-top: -13px;
+}
+.arrow_product_types_left:hover {
+    transform: scale(1.4);
+}
+.arrow_product_types_right:hover {
+    transform: scale(1.4);
+}
+.circles {
+    font-size: 0;
+    margin-bottom: 46px;
+}
+.circles_link li{
+    margin-left: 4px;
+    display: inline-block;
+    background: #000000;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.circles_link li:first-child {
+    margin: 0;
+}
+.text_products {
+    color: #170e0e;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.35px;
+    margin-bottom: 40px;
+}
+.third_block_buttons {
+    font-size: 0;
+    margin: 0 0 54px 0;
+}
+.third_block_buttons_link li {
+    display: inline-block; 
+    border: 2px solid #000000;
+}
+.third_block_buttons_link a {
+    display: inline-block;
+    padding: 12px 35px 11px;
+    text-decoration: none;
+    color: #081013;
+    font-size: 14px;
+    background: #ffffff; 
+}
+.third_block_buttons_link a:hover {
+    background: #081013;
+    color: #ffffff;
+}
+.third_block_buttons_link li.active a{
+    background: #081013;
+    color: #ffffff;
+}
+.third_block_buttons_link li:first-child {
+    margin: 0 30px 0 0 ;
+}
+.products_price {
+    text-align: center;
+}
+.buy_bread {
+    text-align: center;
+    z-index: 10;
+}
+.buy_bread h2 {
+    color: #ffffff;
+    padding: 50px 0 30px 0;
+}
+.figure_shop {
+    padding: 0 0 50px 0;
+}
+.buy_bread_text {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.35px;
+    padding: 0 0 30px 0;
+}
+.figure_shop_buy_bread {
+    margin: 0 0 56px 0;
+}
+.list_shops {
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    gap: 25px;
+    column-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.list_shops li {
+    width: 161px;
+}
+.winn_dixie {
+    height: 28px;
+    background: url(../img/sprite/css_sprites_BakeryBo.png) -10px -254px;
+}
+.walmart {
+    height: 38px;
+    background: url(../img/sprite/css_sprites_BakeryBo.png) -10px -90px;
+}
+.walgreens {
+    height: 35px;
+    background: url(../img/sprite/css_sprites_BakeryBo.png) -189px -68px;
+}
+.publix {
+    height: 36px;
+    background: url(../img/sprite/css_sprites_BakeryBo.png) -10px -148px;
+}
+.meijer {
+    height: 60px;
+    background: url(../img/sprite/css_sprites_BakeryBo.png) -10px -10px;
+}
+.fred_meyer {
+    height: 30px;
+    background: url(../img/sprite/css_sprites_BakeryBo.png) -190px -148px;
+}
+.whole_foods {
+    height: 38px;
+    background: url(../img/sprite/css_sprites_BakeryBo.png) -189px -10px;
+}
+.safeway {
+    height: 30px;
+    background: url(../img/sprite/css_sprites_BakeryBo.png) -10px -204px;
+}
+.the_shops_buy_bread_BakeryBo {
+    margin: 0 0 50px 0;
+}
+.buy_bread_next {
+    margin: 0 0 57px 0;
+}
+.background_buy_bread img {
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.background_buy_bread::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #010000;
+    opacity: 0.68;
+    z-index: 5;
+}
+.block_four {
+    position: relative;
+    color: #0b0806;
+}
+.facts_about_bread_BakeryBo h2 {
+    padding: 77px 0 60px 0;
+}
+.facts_about_bread_BakeryBo {
+    text-align: center;
+}
+.wrapper_facts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 56px;
+}
+.facts {
+    width: 135px;
+    padding-top: 75px;
+}
+.wide {
+    width: 145px;
+}
+.fact_name {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.4px;
+}
+.description {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.35px;
+}
+.Organic_only {
+    position: relative;
+}
+.Organic_only::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url(../img/sprite/css_sprites_BakeryBo.png) -369px -91px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.years_serving {
+    position: relative;
+}
+.years_serving::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url(../img/sprite/css_sprites_BakeryBo.png) -10px -369px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.supermarkets {
+    position: relative;
+    width: 149px;
+}
+.supermarkets::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url(../img/sprite/css_sprites_BakeryBo.png) -10px -298px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.best_products {
+    position: relative;
+    width: 140px;
+}
+.best_products::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url(../img/sprite/css_sprites_BakeryBo.png) -368px -248px;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.recycable_bags {
+    position: relative;
+}
+.recycable_bags::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url(../img/sprite/css_sprites_BakeryBo.png) -368px -171px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.baking_classes {
+    position: relative;
+}
+.baking_classes::before {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background: url(../img/sprite/css_sprites_BakeryBo.png) -368px -10px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.wrapper_facts, .five_block_arrow {
+    margin: 0 0 60px 0;
+}
+.section_five {
+    background: #ffffff;
+}
+#section_six {
+    background: #f9f7f7;
+}
+.buy_coupon {
+    display: flex;
+    flex-direction: row;
+    gap: 34px;
+    padding: 82px 0 82px 0;
+    justify-content: center;
+}
+.buy_coupon_info {
+    width: 619px;
+}
+.buy_coupon_info p:nth-child(2) {
+    padding-bottom: 16px;
+}
+.buy_coupon_info p:nth-child(4) {
+    padding-bottom: 20px;
+}
+.buy_coupon_info p:nth-child(6) {
+    padding-bottom: 35px;
+}
+.buy_coupon_info p {
+    color: #0b0806;
+    line-height: 30px;
+    letter-spacing: 0.35px;
+    font-size: 14px;
+}
+.buy_coupon_info h2 {
+    padding: 0 0 28px 0;
+}
+.e-mail_user {
+    height: 40px;
+    width: 345px;
+    border-radius: 0;
+    border: 1px solid #000000;
+    margin: 0 0 12px 0;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="checkbox"]+label {
+    padding: 5px 5px 5px 40px;
+    position: relative;
+}
+input[type="checkbox"]+label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    left: 0;
+    top: 1px;
+}
+input[type="checkbox"]:checked+label::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 19px;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    left: 5px;
+    top: -1px;
+    transform: rotate(37deg);
+}
+input[type="email"]::placeholder {
+    padding-left: 20px;
+}
+p>label {
+    color: #000101;
+    font-family: 'nunitoextralight';
+    font-size: 12px;
+    letter-spacing: 0.4px;
+}
+.coupon_buttons {
+    font-size: 14px;
+}
+.coupon_buttons a, input[type="submit"] {
+    text-decoration: none;
+    padding: 10px 33px 10px;
+    border: 2px solid #000000;
+    background: transparent;
+    letter-spacing: 0.35px;
+    color: #081013;
+}
+.coupon_buttons a:hover {
+    background: #081013;
+    color: #ffffff;
+}
+.coupon_buttons input {
+    padding: 12px 22px 12px;
+    margin-left: 27px;
+}
+.coupon_buttons input.active {
+    background: #081013;
+    color: #ffffff;
+}
+.container_coupon_promo {
+    color: #0b0806;
+    font-family: 'open_sanssemibold';
+    padding: 58px 77px;
+    width: 316px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+.figure_coupon {
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    z-index: 5;
+    transform: translateX(-50%);
+}
+.figure_scissors {
+    position: absolute;
+    bottom: 83px;
+    left: -6px;
+    z-index: 5;
+}
+.coupon {
+    position: relative;
+} 
+.text_promo_top_text {
+    text-transform: uppercase;
+}
+.one_floor {
+    font-size: 48px;
+    letter-spacing: 1.2px;
+}
+.two_floor {
+    font-size: 120px;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+}
+.three_floor, .five_floor{
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.6px;
+    padding-bottom: 9px;
+}
+.four_floor {
+    font-family: 'Kaushan Script', cursive;
+    line-height: 36px;
+    letter-spacing: 1.2px;
+    font-size: 48px;
+    padding-bottom: 10px;
+}
+.five_floor {
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
