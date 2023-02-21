@@ -834,6 +834,90 @@ p>label {
 .five_floor {
     padding-bottom: 20px;
 }
+.content_footer {
+    color: #ffffff;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    width: 1120px;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+}
+.content_footer h3 {
+    font-size: 16px;
+    line-height: 48px;
+    letter-spacing: 0.4px;
+}
+.content_footer a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.content_footer_info {
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    padding-bottom: 11px;
+}
+.contacts li {
+    padding-bottom: 7px;
+}
+.contacts li:last-child {
+    padding-bottom: 0;
+}
+.twitter {
+    width: 27px;
+    height: 27px;
+    background: url(../img/sprite/css_sprites_BakeryBo.png) -190px -204px;
+}
+.instagram {
+    background: url(../img/sprite/css_sprites_BakeryBo.png) -237px -204px;
+    width: 27px;
+    height: 27px;
+}
+.facebook {
+    background: url(../img/sprite/css_sprites_BakeryBo.png) -284px -204px;
+    width: 27px;
+    height: 27px;
+}
+.social_links a {
+    display: block;
+}
+.social_links {
+   display: flex;
+   flex-direction: row;
+   gap: 12px;  
+}
+.social_links a:hover {
+    opacity: 0.6;
+}
+footer {
+    position: relative;
+}
+.background_footer img{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+.social_media {
+    padding: 60px 0 70px 0;
+    margin-right: 80px;
+}
+.contacts {
+    padding: 60px 0 70px 0;
+}
+.info_footer {
+    padding: 50px 0 0 0;
+    margin-right: 565px;
+}
+p.copyright {
+    padding: 22px 0;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+}
+
+
+
 
 
 
