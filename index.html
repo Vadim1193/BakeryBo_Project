@@ -8,8 +8,11 @@
 </head>
 
 <body>
-    <section id="top_block" class="block_first background_top">
-        <img src="img/background/BG_Bread.jpg" alt="bread">
+    <section id="top_block" class="background_top">
+        <picture>
+            <source srcset="img/background/BG_Bread.webp" type="image/webp" width="1600" height="670">
+            <img src="img/background/BG_Bread.jpg" alt="bread" width="1600" height="670">
+        </picture>
         <div class="container">
             <header>
                 <a class="logo" href="#">BakeryBo</a>
@@ -34,12 +37,12 @@
             </div>
             <div class="main_block_top_buttons">
                 <ul class="main_block_top_buttons_link">
-                    <li><a href="#">Where to buy</a></li>
-                    <li class="active"><a class="two_button" href="#">Get a coupon</a></li>
+                    <li><a href="index.html#section_four">Where to buy</a></li>
+                    <li class="active"><a class="two_button" href="index.html#section_six">Get a coupon</a></li>
                 </ul>
             </div>
             <div class="next">
-                <a class="block_first_wh_arrow" href="index.html#section_2">
+                <a class="block_first_wh_arrow" href="index.html#section_two">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="21" viewBox="0 0 40 21">
                         <path fill="#fff"
                             d="M21.428 20.417L39.41 3.287a1.865 1.865 0 0 0 0-2.723 2.087 2.087 0 0 0-2.853 
@@ -49,8 +52,11 @@
             </div>
         </div>
     </section>
-    <section id="section_2" class="second_block">
-        <img class="background_second_block" src="img/background/BG_paper.jpg" alt="baget">
+    <section id="section_two" class="second_block">
+        <picture>
+            <source srcset="img/background/BG_paper.webp" type="image/webp" width="1600" height="646">
+            <img class="background_second_block" src="img/background/BG_paper.jpg" alt="baget" width="1600" height="646">
+        </picture>
         <div class="container">
             <h2 class="title_second_block">What’s inside?</h2>
             <div class="text_second_block">
@@ -71,7 +77,10 @@
                             118.247 0c.967 0 1.752.695 1.752 1.551s-.785 1.55-1.752 1.55c-2.96 0-4.345 1.123-6.1 2.544-1.941 1.574-4.142 3.357-8.464 3.357z" />
             </svg>
             <div class="picture_baget dignity_bread">
-                <img class="pict_bread" src="img/Baget_Pic.png" alt="bread_baget">
+                <picture>
+                    <source srcset="img/Baget_Pic.webp" type="image/webp" height="368" width="831">
+                    <img class="pict_bread" src="img/Baget_Pic.png" alt="bread_baget" height="368" width="831">
+                </picture>
                 <div class="vector_one">
                     <span>Whole wheat flour</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="82" height="51" viewBox="0 0 82 51">
@@ -256,7 +265,7 @@
                 </div>
             </div>
             <div class="next">
-                <a class="bl_arrow" href="index.html#section_3">
+                <a class="bl_arrow" href="index.html#section_three">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="21" viewBox="0 0 40 21">
                         <path fill="#091215" d="M21.428 20.416L39.41 3.287a1.865 1.865 0 0 0 0-2.722 2.087 2.087 0 0 0-2.853 0L20 
                             16.334 3.445.567a2.09 2.09 0 0 0-2.855 
@@ -266,7 +275,7 @@
             </div>
         </div>
     </section>
-    <section id="section_3" class="third_block">
+    <section id="section_three" class="third_block">
         <div class="container">
             <h2 class="title_products_price">Whole wheat bread line</h2>
             <div class="product_types">
@@ -312,14 +321,17 @@
             </div>
             <div class="third_block_buttons">
                 <ul class="third_block_buttons_link">
-                    <li><a class="button_first" href="#">Where to buy</a></li>
-                    <li class="active"><a href="#">Get a coupon</a></li>
+                    <li><a class="button_first" href="index.html#section_four">Where to buy</a></li>
+                    <li class="active"><a href="index.html#section_six">Get a coupon</a></li>
                 </ul>
             </div>
         </div>
     </section>
     <section id="section_four" class="block_four background_buy_bread">
-        <img class="background_buy" src="img/background/BG_hends.jpg" alt="making bread">
+        <picture>
+            <source srcset="img/background/BG_hends.webp" type="image/webp" width="1600" height="527">
+            <img class="background_buy" src="img/background/BG_hends.jpg" alt="making bread" width="1600" height="527">
+        </picture>
         <div class="container">
             <h2 class="title_section_four">Where to buy</h2>
             <div class="buy_bread_text">
@@ -425,11 +437,11 @@
                         <input type="checkbox" id="i_agree" checked>
                         <label for="i_agree">I want to receive news about deals and new products.</label>
                     </p>
+                    <div class="coupon_buttons">
+                        <a href="index.html#section_four">Where to buy</a>
+                        <input class="active" type="submit" value="Download coupon">
+                    </div>
                 </form>
-                <div class="coupon_buttons">
-                    <a href="index.html#section_four">Where to buy</a>
-                    <input class="active" type="submit" value="Download coupon">
-                </div>
             </div>
             <div class="coupon">
                 <svg class="figure_coupon" xmlns="http://www.w3.org/2000/svg" width="565" height="620"
@@ -477,7 +489,10 @@
         </div>
     </section>
     <footer class=background_footer>
-        <img src="img/background/BG_black_paper.jpg" alt="black_paper">
+        <picture>
+            <source srcset="img/background/BG_black_paper.webp" type="image/webp" width="1600" height="234">
+            <img src="img/background/BG_black_paper.jpg" alt="black_paper" width="1600" height="234">
+        </picture>
         <div class="container content_footer">
             <div class="info_footer">
                 <a class="logo" href="#">BakeryBo</a>
