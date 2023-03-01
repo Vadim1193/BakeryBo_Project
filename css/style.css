@@ -88,13 +88,14 @@ html {
 .container {
     color: #0f1417;
     position: relative;
-    width: 1110px;
+    max-width: 1110px;
     margin: 0 auto;
     font-family: 'Nunito', sans-serif;
     z-index: 10;
+    overflow: hidden;
 }
 header {
-    margin: 0 auto 106px;
+    margin: 0 auto 95px;
     display: flex;
     justify-content: space-between;
 }
@@ -137,7 +138,7 @@ header {
 }
 h1 {
     font-size: 48px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.5px;
 }
 .main_block_top p {
     font-size: 40px;
@@ -257,6 +258,7 @@ h2 {
 }
 .pict_bread {
     margin-top: -9px;
+    max-width: 100%;
 }
 .vector_one {
     top: 21px;
@@ -336,6 +338,7 @@ h2 {
     padding: 0 160px;
     display: flex;
     margin-bottom: 40px;
+    flex-wrap: wrap;
 }
 .product_types::before {
     content: "";
@@ -872,10 +875,8 @@ p>label {
     color: #ffffff;
     font-size: 14px;
     display: flex;
-    flex-direction: row;
-    width: 1120px;
-    margin: 0 auto;
     font-family: 'Open Sans', sans-serif;
+    flex-wrap: wrap;
 }
 .content_footer h3 {
     font-size: 16px;
@@ -885,7 +886,6 @@ p>label {
 .content_footer a {
     text-decoration: none;
     color: #ffffff;
-    margin-left: 1px;
 }
 .content_footer_info {
     font-size: 14px;
@@ -915,11 +915,12 @@ p>label {
 }
 .social_links a {
     display: block;
-}
+    border-radius: 30%;
+}    
 .social_links {
    display: flex;
    flex-direction: row;
-   gap: 11px;  
+   gap: 12px;  
 }
 .social_links a:hover {
     opacity: 0.6;
@@ -943,10 +944,14 @@ footer {
 }
 .info_footer {
     padding: 56px 0 0 0;
-    margin-right: 551px; 
+    margin-right: 552px; 
 }
 p.copyright {
-    padding: 32px 0px 90px 5px;
+    padding: 32px 0 90px 0;
     font-size: 12px;
     letter-spacing: 0.5px;
+}
+sub {
+    font-size: 26px;
+    vertical-align: super;
 }
